@@ -1,4 +1,4 @@
-# sendtortm: Send webpage to Remember the Milk as a task
+# Milkshake: Send webpage to Remember the Milk as a task
 
 This lets you create Remember the Milk tasks from web pages. It creates
 a toolbar button. When you want to convert a web page to a task:
@@ -49,4 +49,4 @@ This is not endorsed or certified by Remember the Milk.
 Thank you to MDN contributors and webextension developers who wrote up the
 documentation for webextensions, related APIs, and all the code samples!
 
-[Install it on AMO](https://addons.mozilla.org/en-US/firefox/addon/sendtortm/)
+[Install it on AMO](https://addons.mozilla.org/en-US/firefox/addon/milkshake/)
