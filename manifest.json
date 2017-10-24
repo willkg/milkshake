@@ -1,30 +1,29 @@
 {
     "manifest_version": 2,
-    "name": "send-to-rtm",
-    "version": "1.0",
+    "name": "milkshake",
+    "version": "0.1",
 
-    "description": "Let's you send tab data to Remember the Milk as todo items",
+    "description": "Save web pages as tasks in Remember the Milk",
 
     "icons": {
-        "48": "icons/sendtortm-48.png"
+        "48": "icons/milkshake-48.png"
     },
 
     "permissions": [
         "https://www.rememberthemilk.com/*",
         "https://api.rememberthemilk.com/*",
-        "activeTab",
-        "storage"
+        "activeTab"
     ],
 
     "browser_action": {
-        "default_icon": "icons/sendtortm-32.png",
+        "default_icon": "icons/milkshake-32.png",
         "theme_icons": [{
-            "light": "icons/sendtortm-32-light.png",
-            "dark": "icons/sendtortm-32.png",
+            "light": "icons/milkshake-32-light.png",
+            "dark": "icons/milkshake-32.png",
             "size": 32
         }],
-        "default_title": "Send to Remember the Milk",
-        "default_popup": "popup/sendtortm.html",
+        "default_title": "Milkshake",
+        "default_popup": "popup/milkshake.html",
         "browser_style": false
     }
 }

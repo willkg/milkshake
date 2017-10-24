@@ -5,7 +5,7 @@ a toolbar button. When you want to convert a web page to a task:
 
 1. click the toolbar button and a popup will pop up with the page title
    and url
-2. click "Send" button on the popup
+2. click "Create task" button on the popup
 3. this will open another window on m.rememberthemilk.com where you
    can fill out the rest of the details for the task
 4. click "Submit" and then close the window
