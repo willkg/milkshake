@@ -1,7 +1,0 @@
-* DONE: need a button in the toolbar
-* DONE: clicking the button opens up a popup
-** DONE: the popup pulls the title and url of the current tab and puts it in the form
-** DONE: the form has a button
-** clicking the button sends that todo item to RTM via the API
-* need RTM API token?
-** if so, then we need to do preferences somehow

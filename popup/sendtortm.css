@@ -1,0 +1,17 @@
+#rtm {
+    width: 100%;
+}
+
+#rtm label {
+    font-size: 0.7em;
+}
+
+#rtmtodo {
+    width: 100%;
+}
+
+#rtmsiteurl {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}

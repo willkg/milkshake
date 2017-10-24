@@ -10,10 +10,12 @@
   <p>
     Send to Remember the Milk.
   </p>
-  <form>
-    <input type="text" id="rtmsiteurl"><br/>
-    <input type="text" id="rtmtodo"><br />
-    <button id="submit" type="submit">Send</button>
+  <form id="rtm">
+      <label for="rtmtodo">Task:</label><br/>
+      <textarea id="rtmtodo" rows="2"></textarea><br/>
+      <label for="rtmurl">URL:</label><br/>
+      <input type="text" id="rtmsiteurl"><br/>
+      <button type="submit" id="rtmsubmit">Create task</button>
   </form>
 </body>
 

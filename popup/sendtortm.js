@@ -1,13 +1,30 @@
-console.info("rtm test");
-document.addEventListener("DOMContentLoaded", (e) => {
-  console.info("rtm load");
-  // Get the active tab--we need the title and url for this
-  var gettingActiveTab = browser.tabs.query({active: true, currentWindow: true});
-  gettingActiveTab.then((tabs) => {
-    var url = tabs[0].url;
-    document.getElementById('rtmsiteurl').value = url;
+async function rtmonclick(ev) {
+    console.info("click!");
+    let task = document.getElementById("rtmtodo").value;
+    let siteurl = document.getElementById("rtmsiteurl").value;
 
-    var title = tabs[0].title;
+    let url = "https://m.rememberthemilk.com/add?" +
+        "name=" + encodeURIComponent(task) + "&" +
+        "url=" + encodeURIComponent(siteurl);
+
+    let w = await browser.windows.create({
+        width: 250,
+        height: 580,
+        url: url,
+        type: "popup"
+    });
+}
+
+async function rtmonload(ev) {
+    // Get the active tab--we need the title and url for this
+    let activeTabs = await browser.tabs.query({active: true, currentWindow: true});
+    let url = activeTabs[0].url;
+    let title = activeTabs[0].title;
+
+    document.getElementById('rtmsiteurl').value = url;
     document.getElementById("rtmtodo").value = title;
-  });
-});
+    document.getElementById("rtmsubmit").addEventListener("click", rtmonclick);
+}
+
+
+document.addEventListener("DOMContentLoaded", rtmonload);
