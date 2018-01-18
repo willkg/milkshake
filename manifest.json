@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
     "name": "milkshake",
-    "version": "0.1",
+    "version": "0.2",
 
-    "description": "Save web pages as tasks in Remember the Milk",
+    "description": "Save web pages as tasks in Remember the Milk service",
 
     "icons": {
         "48": "icons/milkshake-48.png"
